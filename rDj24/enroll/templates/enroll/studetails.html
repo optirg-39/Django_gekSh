@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        th,td{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+<h3>Students</h3>
+    {{stud}}
+    
+    {% if stud %}
+    <h3>Data is present</h3>
+ <!-- tabel -->
+<table>
+    <tr>
+        <th>ID</th>
+        <th>StuID</th>
+        <th>StuNAME</th>
+        <th>StuEmail</th>
+        <th>StuPASS</th>
+    </tr>
+    <tr>
+        <td>{{stud.id}}</td>
+        <td>{{stud.stuid}}</td>
+        <td>{{stud.stuname}}</td>
+        <td>{{stud.stuemail}}</td>
+        <td>{{stud.stupass}}</td>
+    </tr>
+
+
+
+    
+</table>
+    {% else %}
+    <h2>data is not present</h2>
+    {% endif %}
+
+</body>
+</html>
