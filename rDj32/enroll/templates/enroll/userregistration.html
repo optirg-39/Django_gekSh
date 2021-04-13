@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registrarion</title>
+</head>
+<body>
+<form action="" method="get">
+    {% for field in stud %}
+        {{field.label_tag}}
+        {{field}}
+    {% endfor %}
+
+    <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
