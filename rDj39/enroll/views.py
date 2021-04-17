@@ -11,6 +11,9 @@ def showformdata(request):
         fm = StudentRegistration(request.POST)
         if fm.is_valid():
             print("Post request")
+
+            print('All DATA', fm.cleaned_data)
+            print('data by .get()', fm.cleaned_data.get('roll'))
             print('Name:', fm.cleaned_data['name'])
             print('Roll:', fm.cleaned_data['roll'])
             print('Price:', fm.cleaned_data['price'])
