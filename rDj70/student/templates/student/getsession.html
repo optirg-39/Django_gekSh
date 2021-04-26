@@ -8,6 +8,9 @@
 <h3>get Session ...!! <br><br>
     {{name}}
     {{lname}}
+    {% for key in request.session.keys %}
+        {{key}}
+    {% endfor %}
 </h3>
 </body>
 </html>
